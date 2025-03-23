@@ -28,12 +28,14 @@ Since the IEM Shell files are too big to upload to GitHub, I have added them to 
 
 [Dropbox Link For IEM Shell Files](https://www.dropbox.com/scl/fo/7igmpw1ufs74wjp9bscd1/APTIkM8Hd0Q5tOlSX6-9Vis?rlkey=q3dak7tetpvdot7d4ondi776o&st=a5fo64j4&dl=0)
 
+### Linux
 ```Bash
 for file in *.ctm; do
     ctmconv "$file" "${file%.ctm}.stl"
 done
 ```
 
+### Windows Powershell
 ```Powershell
 Get-ChildItem -Filter "*.ctm" | ForEach-Object {
     $output = $_.FullName -replace "\.ctm$", ".stl"
