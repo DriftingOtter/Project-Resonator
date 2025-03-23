@@ -24,7 +24,7 @@ I hope you all can use this as a springboard to learn more about IEMs yourself a
 
 ## How to compress Autodesk Fusion 360 IEM Shell Files
 
-Since the IEM Shell files are too big to upload to GitHub, I have added them to the dropbox link below, go to the site and download the folder/file(s) and compress them via the respective commands below w/ OpenCTM.
+Since the IEM Shell files are too big to upload to GitHub, I have added them to the dropbox link below, go to the site and download the folder/file(s) and de-compress them via the respective commands below w/ OpenCTM.
 
 [Dropbox Link For IEM Shell Files](https://www.dropbox.com/scl/fo/7igmpw1ufs74wjp9bscd1/APTIkM8Hd0Q5tOlSX6-9Vis?rlkey=q3dak7tetpvdot7d4ondi776o&st=a5fo64j4&dl=0)
 
