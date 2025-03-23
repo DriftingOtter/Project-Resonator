@@ -5,16 +5,16 @@
   <ReferenceAngle>0</ReferenceAngle>
   <PeakNotchAna>True</PeakNotchAna>
   <SPLTarget>
-    <HzLow>273.2</HzLow>
-    <dBLow>93.3</dBLow>
-    <HzHigh>5744.8</HzHigh>
-    <dBHigh>93.2</dBHigh>
+    <HzLow>117.3</HzLow>
+    <dBLow>57.0</dBLow>
+    <HzHigh>5034.4</HzHigh>
+    <dBHigh>41.4</dBHigh>
   </SPLTarget>
   <PowerTarget>
-    <HzLow>281.4</HzLow>
-    <dBLow>112.6</dBLow>
-    <HzHigh>12000.0</HzHigh>
-    <dBHigh>89.0</dBHigh>
+    <HzLow>44.7</HzLow>
+    <dBLow>46.5</dBLow>
+    <HzHigh>5452.9</HzHigh>
+    <dBHigh>45.1</dBHigh>
   </PowerTarget>
   <WAY wi="0">
     <DriverCount>1</DriverCount>
@@ -36,7 +36,7 @@
       <ResponseInvert>False</ResponseInvert>
       <ExtendedData>False</ExtendedData>
       <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_CI_22955\</ResponseFile>
-      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_CI_22955\Impedence_Response.zma</ImpedanceFile>
+      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_HODVTEC-31618\Impedence_Response.zma</ImpedanceFile>
       <ImpedanceScale>1.000</ImpedanceScale>
       <RESPONSE ri="0">
         <FileHeader>Frequnecy_Response.frd</FileHeader>
@@ -53,22 +53,50 @@
       <TransferFunction></TransferFunction>
       <PARAMETER pi="0">
         <Name>R1</Name>
-        <Value>6.800</Value>
+        <Value>5600.000</Value>
         <Unit>ohm</Unit>
         <Visible>True</Visible>
       </PARAMETER>
     </FILTER>
     <FILTER xi="1">
-      <FilterType>Passive R1</FilterType>
+      <FilterType>Passive C1</FilterType>
       <Shape></Shape>
       <Order>0</Order>
       <Connection>Shunt Com</Connection>
       <Bypass>False</Bypass>
       <TransferFunction></TransferFunction>
-      <PARAMETER pi="0">
-        <Name>R1</Name>
-        <Value>0.470</Value>
-        <Unit>ohm</Unit>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>50.000</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="2">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>50.000</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="3">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>50.000</Value>
+        <Unit>uF</Unit>
         <Visible>True</Visible>
       </PARAMETER>
     </FILTER>
@@ -90,7 +118,7 @@
       <RotationY>0</RotationY>
       <ResponseScale>1.000</ResponseScale>
       <ResponseDelay>0.0</ResponseDelay>
-      <ResponseInvert>False</ResponseInvert>
+      <ResponseInvert>True</ResponseInvert>
       <ExtendedData>False</ExtendedData>
       <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_TWFK_30017\</ResponseFile>
       <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_TWFK_30017\Impedence_Response.zma</ImpedanceFile>
@@ -110,26 +138,12 @@
       <TransferFunction></TransferFunction>
       <PARAMETER pi="2">
         <Name>C1</Name>
-        <Value>4.700</Value>
+        <Value>0.027</Value>
         <Unit>uF</Unit>
         <Visible>True</Visible>
       </PARAMETER>
     </FILTER>
     <FILTER xi="1">
-      <FilterType>Passive C1</FilterType>
-      <Shape></Shape>
-      <Order>0</Order>
-      <Connection>Shunt Com</Connection>
-      <Bypass>False</Bypass>
-      <TransferFunction></TransferFunction>
-      <PARAMETER pi="2">
-        <Name>C1</Name>
-        <Value>2.700</Value>
-        <Unit>uF</Unit>
-        <Visible>True</Visible>
-      </PARAMETER>
-    </FILTER>
-    <FILTER xi="2">
       <FilterType>Passive R1</FilterType>
       <Shape></Shape>
       <Order>0</Order>
@@ -138,8 +152,22 @@
       <TransferFunction></TransferFunction>
       <PARAMETER pi="0">
         <Name>R1</Name>
-        <Value>0.560</Value>
+        <Value>22.000</Value>
         <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="2">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>4.700</Value>
+        <Unit>uF</Unit>
         <Visible>True</Visible>
       </PARAMETER>
     </FILTER>
@@ -153,7 +181,7 @@
     <Delay>0.0</Delay>
     <Invert>False</Invert>
     <DRIVER di="0">
-      <Name>ED_30262</Name>
+      <Name>BK_26824</Name>
       <LocationX>0.0</LocationX>
       <LocationY>0.0</LocationY>
       <LocationZ>0.0</LocationZ>
@@ -161,13 +189,13 @@
       <RotationY>0</RotationY>
       <ResponseScale>1.000</ResponseScale>
       <ResponseDelay>0.0</ResponseDelay>
-      <ResponseInvert>False</ResponseInvert>
+      <ResponseInvert>True</ResponseInvert>
       <ExtendedData>False</ExtendedData>
-      <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_ED_30262\</ResponseFile>
-      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_ED_30262\Impedence_Response.zma</ImpedanceFile>
+      <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_BK_26824\</ResponseFile>
+      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_BK_26824\Impedence_Response.zma</ImpedanceFile>
       <ImpedanceScale>1.000</ImpedanceScale>
       <RESPONSE ri="0">
-        <FileHeader>Frequnecy_Response.frd</FileHeader>
+        <FileHeader>Frequency_Response.frd</FileHeader>
         <Hor>0</Hor>
         <Ver>0</Ver>
       </RESPONSE>
@@ -181,7 +209,35 @@
       <TransferFunction></TransferFunction>
       <PARAMETER pi="2">
         <Name>C1</Name>
-        <Value>0.056</Value>
+        <Value>0.010</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="1">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>200.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="2">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>2.200</Value>
         <Unit>uF</Unit>
         <Visible>True</Visible>
       </PARAMETER>
@@ -190,13 +246,13 @@
   <WAY wi="3">
     <DriverCount>1</DriverCount>
     <DriverConn>0</DriverConn>
-    <Enabled>False</Enabled>
+    <Enabled>True</Enabled>
     <CommonResponse>True</CommonResponse>
     <Gain>1.000</Gain>
     <Delay>0.0</Delay>
     <Invert>False</Invert>
     <DRIVER di="0">
-      <Name></Name>
+      <Name>HODVTECH</Name>
       <LocationX>0.0</LocationX>
       <LocationY>0.0</LocationY>
       <LocationZ>0.0</LocationZ>
@@ -206,10 +262,71 @@
       <ResponseDelay>0.0</ResponseDelay>
       <ResponseInvert>False</ResponseInvert>
       <ExtendedData>False</ExtendedData>
-      <ResponseFile></ResponseFile>
-      <ImpedanceFile></ImpedanceFile>
+      <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_HODVTEC-31618\</ResponseFile>
+      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_HODVTEC-31618\Impedence_Response.zma</ImpedanceFile>
       <ImpedanceScale>1.000</ImpedanceScale>
+      <RESPONSE ri="0">
+        <FileHeader>Frequnecy_Response.frd</FileHeader>
+        <Hor>0</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
     </DRIVER>
+    <FILTER xi="0">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>6800.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="1">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>10.000</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="2">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>0.010</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="3">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>6.800</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
   </WAY>
   <WAY wi="4">
     <DriverCount>1</DriverCount>
