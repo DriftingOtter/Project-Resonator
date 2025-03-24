@@ -23,7 +23,7 @@ I hope you all can use this as a springboard to learn more about IEMs yourself a
 
 *Remember I am still human so my design is not perfect, (far from it) but I hope it gives some what of an example of what a IEM build process kind of looks like).*
 
-## How to install archieved version of vituixCAD + Missing file paths issue [FIXED]
+## How to install archived version of vituixCAD + Missing file paths issue [FIXED]
 
 1. Go to Internet Archive's Wayback machine
 2. Paste "https://kimmosaunisto.net/"
