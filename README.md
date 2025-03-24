@@ -26,13 +26,13 @@ I hope you all can use this as a springboard to learn more about IEMs yourself a
 ## How to install archieved version of vituixCAD + Missing file paths issue [FIXED]
 
 1. Go to Internet Archive's Wayback machine
-2. Pate "https://kimmosaunisto.net/Software/VituixCAD"
+2. Paste "https://kimmosaunisto.net/Software/VituixCAD"
 3. Find any version of the software before < 2018-04-25, then download + install
 4. Then open the driver files from the project
 
 Most likely when you open the files it will give you a buch of errors of missing file path(s). Don't Worry! Its just because they still are using the paths on my system for finding the ```.frd``` and ```.zma``` files for drivers.
 
-To update the paths with the ```.frd``` (frequency response files) and ```.zma``` (impedence response) files, simply click the folder icon next to where you upload the frequnecy response, and update it by finding the folder in the project for each driver and clicking on the correcet file. This should fix the missing path(s) issue on the file. 
+To update the paths for the .frd (frequency response) and .zma (impedance response) files, click the folder icon next to the file upload section. Then, navigate to the correct folder for each BA driver in the project and select the corresponding file. This should resolve any missing path issues.
 
 *(you only have to do this once)*
 
