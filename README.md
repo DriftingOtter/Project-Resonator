@@ -1,3 +1,4 @@
+![Banner](GitHub Banner.png)
 # __Project Resonator | *The* Open-Source IEM.__
 
 > A love letter to the IEM/CIEM hobby.
