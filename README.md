@@ -26,7 +26,7 @@ I hope you all can use this as a springboard to learn more about IEMs yourself a
 ## How to install archieved version of vituixCAD + Missing file paths issue [FIXED]
 
 1. Go to Internet Archive's Wayback machine
-2. Paste "https://kimmosaunisto.net/Software/VituixCAD"
+2. Paste "https://kimmosaunisto.net/"
 3. Find any version of the software before < 2018-04-25, then download + install
 4. Then open the driver files from the project
 
