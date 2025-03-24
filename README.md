@@ -1,4 +1,4 @@
-![Banner](GitHub Banner.png)
+![Banner](./GitHub%20Assets/GitHub%20Banner.png)
 # __Project Resonator | *The* Open-Source IEM.__
 
 > A love letter to the IEM/CIEM hobby.
