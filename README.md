@@ -23,7 +23,7 @@ I hope you all can use this as a springboard to learn more about IEMs yourself a
 
 *Remember I am still human so my design is not perfect, (far from it) but I hope it gives some what of an example of what a IEM build process kind of looks like).*
 
-## How to compress Autodesk Fusion 360 IEM Shell Files
+## How to de-compress Autodesk Fusion 360 IEM Shell Files
 
 Since the IEM Shell files are too big to upload to GitHub, I have added them to the dropbox link below, go to the site and download the folder/file(s) and de-compress them via the respective commands below w/ OpenCTM.
 
@@ -47,11 +47,14 @@ Get-ChildItem -Filter "*.ctm" | ForEach-Object {
 ## Authors
 
 - Daksh Kaul (aka. DriftingOtter)
+
+## Credits & Citations
 - Head-Fi's DIY IEM forms and community
 - [Kozh](https://www.youtube.com/@kozh4013/videos)
 - [Kirby Meets Audio](https://youtu.be/QClvPIuW3zI?si=NcwjdGAZriBUcmHE)
 - [Crinacle](https://www.youtube.com/watch?v=tCqV3ZRcZ9g&t=1227s)
 - [Mr.T's Design Graveyard](https://youtu.be/3FGNw28xBr0?si=LEpJtPCjVtikS_FK)
-- Any many more..
+- *Any many more...*
+
 
 *if there is anyone I didn't mention, please let me know so I can add you to the list!*
