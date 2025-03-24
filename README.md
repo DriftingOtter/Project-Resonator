@@ -5,7 +5,7 @@
 
 ## Technologies Used & Software required
 
-1. VituixCAD        (For tuning simulation)
+1. VituixCAD Ver < 2.0       (For tuning simulation) (Read below for install guide)
 2. KiCad            (For Schematic and PCB deisgn)
 3. AutoDesk Fusion  (For designing the IEM shell)
 5. OpenCTM          (For .stl 3D file compression)
@@ -22,6 +22,19 @@ For sure! I have set the liscense to be lenient with future project that would l
 I hope you all can use this as a springboard to learn more about IEMs yourself and maybe even skip some of the mistakes I made along the way and quickly get started on making your own!
 
 *Remember I am still human so my design is not perfect, (far from it) but I hope it gives some what of an example of what a IEM build process kind of looks like).*
+
+## How to install archieved version of vituixCAD + Missing file paths issue [FIXED]
+
+1. Go to Internet Archive's Wayback machine
+2. Pate "https://kimmosaunisto.net/Software/VituixCAD"
+3. Find any version of the software before < 2018-04-25, then download + install
+4. Then open the driver files from the project
+
+Most likely when you open the files it will give you a buch of errors of missing file path(s). Don't Worry! Its just because they still are using the paths on my system for finding the ```.frd``` and ```.zma``` files for drivers.
+
+To update the paths with the ```.frd``` (frequency response files) and ```.zma``` (impedence response) files, simply click the folder icon next to where you upload the frequnecy response, and update it by finding the folder in the project for each driver and clicking on the correcet file. This should fix the missing path(s) issue on the file. 
+
+*(you only have to do this once)*
 
 ## How to de-compress Autodesk Fusion 360 IEM Shell Files
 
