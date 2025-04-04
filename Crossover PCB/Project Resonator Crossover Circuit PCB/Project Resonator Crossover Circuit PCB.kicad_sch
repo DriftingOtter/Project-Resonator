@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Project Resonator Crossover Circuit PCB")
-		(date "2025-03-21")
-		(rev "Revision 1")
+		(date "2025-04-01")
+		(rev "Revision 2")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -487,6 +487,130 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "R_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_1_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 144.78 106.68)
@@ -495,34 +619,22 @@
 		(uuid "01f180f8-065d-4bb6-8e0e-c032a90629a4")
 	)
 	(junction
-		(at 132.08 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "06ec6b16-6d6d-4280-ac10-cbfefe051c88")
-	)
-	(junction
-		(at 133.35 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "09e7206c-cd16-4984-b131-02551e6a5623")
-	)
-	(junction
-		(at 154.94 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1afb633a-6748-47b6-a4ac-566b8bbe0a25")
-	)
-	(junction
-		(at 143.51 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3eed7cf2-fc11-4da6-ad31-97464983f2e8")
-	)
-	(junction
 		(at 143.51 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "58fd9976-04a4-4b17-9fac-9b31c3607a62")
+		(uuid "18afaa0d-4cf8-41d4-9b55-3caa1cc0a54c")
+	)
+	(junction
+		(at 144.78 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e030f54-af78-4685-8c0d-2606296a61e7")
+	)
+	(junction
+		(at 166.37 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36655fe5-72af-4c1e-b699-68b1a3569294")
 	)
 	(junction
 		(at 166.37 106.68)
@@ -531,10 +643,10 @@
 		(uuid "5c0b35dc-b1f9-4862-b2ec-6d197f2bcafc")
 	)
 	(junction
-		(at 143.51 137.16)
+		(at 144.78 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6ec3357d-8da2-4111-9d88-4df30c049b8a")
+		(uuid "6089c8b0-36c9-46da-b140-d6ed9fbe0865")
 	)
 	(junction
 		(at 144.78 99.06)
@@ -555,22 +667,16 @@
 		(uuid "917047b6-1532-4e6e-bbe1-4d0fff940dfc")
 	)
 	(junction
-		(at 144.78 53.34)
+		(at 175.26 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a353067e-8c11-4c37-b5a8-46444a509952")
+		(uuid "9ac89e60-52e1-4ce8-b822-b90c6796cdbe")
 	)
 	(junction
-		(at 132.08 60.96)
+		(at 154.94 127)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a7b768ee-e60c-4ee0-b61d-f6a3d65c7f15")
-	)
-	(junction
-		(at 119.38 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad4c3865-a7f7-406e-a222-4d5b77d2a541")
+		(uuid "af1abdbd-b457-4af5-af50-513c1078eae1")
 	)
 	(junction
 		(at 166.37 83.82)
@@ -579,10 +685,10 @@
 		(uuid "befbdee4-179c-45a4-9dfc-abb7cbf99505")
 	)
 	(junction
-		(at 144.78 60.96)
+		(at 154.94 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c4d88a06-6caa-4637-b272-f0a9cada5aec")
+		(uuid "c7d7f6d1-9216-4e47-badb-069e82dbbb6e")
 	)
 	(junction
 		(at 166.37 93.98)
@@ -591,56 +697,16 @@
 		(uuid "cc648ae2-6be0-4a91-a057-be605013fb21")
 	)
 	(junction
-		(at 119.38 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db5f7c38-9cab-4a7f-a09a-abbe9b5447c5")
-	)
-	(junction
-		(at 133.35 99.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dcfe93ba-dc0e-4e67-9314-baa05d245254")
-	)
-	(junction
-		(at 154.94 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e0049e2c-422d-46e3-9f1c-e3a88b5a326f")
-	)
-	(junction
 		(at 175.26 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1f9896e-f683-4aad-b694-9f53e4394df6")
 	)
 	(junction
-		(at 143.51 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e22f0899-e3b7-4354-844c-fb174b988840")
-	)
-	(junction
-		(at 134.62 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e90e4dba-bbb1-46cd-b8ce-59f6d9af1f4b")
-	)
-	(junction
-		(at 134.62 83.82)
+		(at 143.51 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f164a9b4-c386-4a38-8e6b-6faba18b7aec")
-	)
-	(wire
-		(pts
-			(xy 154.94 127) (xy 154.94 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "017d8e3b-d68a-436a-aaef-2e8040386d30")
 	)
 	(wire
 		(pts
@@ -654,37 +720,27 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 106.68) (xy 133.35 106.68)
+			(xy 154.94 137.16) (xy 166.37 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "086266b4-1b1d-4db3-a7f0-322b898e0a99")
+		(uuid "095ee539-a1ed-4399-a7a2-24e599c23706")
 	)
 	(wire
 		(pts
-			(xy 134.62 76.2) (xy 143.51 76.2)
+			(xy 143.51 76.2) (xy 146.05 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14234783-c382-4cf3-942a-72b0717b6928")
+		(uuid "0a2a7b15-cc0f-4b3d-b03e-36ef6e1da5f5")
 	)
 	(wire
 		(pts
-			(xy 119.38 60.96) (xy 132.08 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "212c985c-947c-47e2-8a9c-b2db1b71e96a")
-	)
-	(wire
-		(pts
-			(xy 175.26 76.2) (xy 175.26 87.63)
+			(xy 175.26 76.2) (xy 175.26 83.82)
 		)
 		(stroke
 			(width 0)
@@ -694,33 +750,13 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 76.2) (xy 175.26 76.2)
+			(xy 163.83 76.2) (xy 175.26 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "285a3e43-4888-427e-a31a-58890c0b7050")
-	)
-	(wire
-		(pts
-			(xy 143.51 76.2) (xy 147.32 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2adcb0fa-0b62-42df-adef-e8387b4ad050")
-	)
-	(wire
-		(pts
-			(xy 175.26 53.34) (xy 156.21 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bed0f1e-6e6d-4692-9118-d6217278b1e6")
 	)
 	(wire
 		(pts
@@ -734,27 +770,37 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 127) (xy 154.94 127)
+			(xy 153.67 76.2) (xy 156.21 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a52d45b-6479-4559-8be4-17d5fa2de1a9")
+		(uuid "31e9a296-d730-4e43-98bf-ca9f250e5a89")
 	)
 	(wire
 		(pts
-			(xy 134.62 83.82) (xy 143.51 83.82)
+			(xy 154.94 127) (xy 154.94 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c28f1e7-69bc-4477-b696-bece8b023da7")
+		(uuid "3c4e2af8-415f-4b67-a872-70541599a890")
 	)
 	(wire
 		(pts
-			(xy 133.35 99.06) (xy 144.78 99.06)
+			(xy 156.21 53.34) (xy 160.02 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43f1043f-9f05-4a4e-ad43-a805297ee4fb")
+	)
+	(wire
+		(pts
+			(xy 134.62 99.06) (xy 144.78 99.06)
 		)
 		(stroke
 			(width 0)
@@ -774,7 +820,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 60.96) (xy 119.38 60.96)
+			(xy 125.73 60.96) (xy 144.78 60.96)
 		)
 		(stroke
 			(width 0)
@@ -794,17 +840,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 60.96) (xy 144.78 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a5509da-35a7-4eeb-94f1-2eafaeff6d61")
-	)
-	(wire
-		(pts
-			(xy 115.57 53.34) (xy 119.38 53.34)
+			(xy 125.73 53.34) (xy 133.35 53.34)
 		)
 		(stroke
 			(width 0)
@@ -834,43 +870,33 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 99.06) (xy 133.35 99.06)
+			(xy 166.37 127) (xy 166.37 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "736faeb3-5207-4ffc-a695-3f9971cdf34a")
+		(uuid "74bd1623-796a-44ba-b2df-08dccbe83dc5")
 	)
 	(wire
 		(pts
-			(xy 139.7 137.16) (xy 143.51 137.16)
+			(xy 151.13 137.16) (xy 154.94 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8121559f-c091-4d4f-ae5a-5dee532e6cd5")
+		(uuid "9f89f41c-d94d-42e3-ad14-543c5b5c9f70")
 	)
 	(wire
 		(pts
-			(xy 143.51 127) (xy 143.51 129.54)
+			(xy 166.37 83.82) (xy 175.26 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a7d70cc7-1cc9-4e4d-8aae-4e51c18858d6")
-	)
-	(wire
-		(pts
-			(xy 132.08 53.34) (xy 144.78 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9a8906a-bac6-4973-b1db-94aaab6eb1e6")
+		(uuid "a8ca1e0a-ac55-4baa-b771-8d1d583f2d3e")
 	)
 	(wire
 		(pts
@@ -894,6 +920,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 127) (xy 175.26 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af45f633-9d0d-48ff-aa09-ee666dabde00")
+	)
+	(wire
+		(pts
 			(xy 175.26 99.06) (xy 175.26 127)
 		)
 		(stroke
@@ -904,17 +940,17 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 137.16) (xy 154.94 137.16)
+			(xy 140.97 53.34) (xy 144.78 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b3b2f4bf-64da-42cc-964e-1b2728438da2")
+		(uuid "b44e4ed4-4b34-43c1-835f-4abace78ba19")
 	)
 	(wire
 		(pts
-			(xy 162.56 127) (xy 175.26 127)
+			(xy 162.56 127) (xy 166.37 127)
 		)
 		(stroke
 			(width 0)
@@ -934,13 +970,13 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 127) (xy 143.51 127)
+			(xy 167.64 53.34) (xy 175.26 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c50bd850-ec64-40b4-a80c-2279af35c11e")
+		(uuid "cd1132d2-edbe-4995-aa13-b60b7bce823a")
 	)
 	(wire
 		(pts
@@ -964,23 +1000,33 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 137.16) (xy 166.37 137.16)
+			(xy 175.26 83.82) (xy 175.26 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d9099431-b2c9-4135-9975-c6203fd61ada")
+		(uuid "d4b37e5b-7096-47d0-89e8-54483ed32aad")
 	)
 	(wire
 		(pts
-			(xy 166.37 106.68) (xy 166.37 137.16)
+			(xy 166.37 106.68) (xy 166.37 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "dc4637dc-b0c8-471e-9791-0388a086d03d")
+	)
+	(wire
+		(pts
+			(xy 151.13 127) (xy 154.94 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de58988d-36dd-42d1-b810-e889de68de36")
 	)
 	(wire
 		(pts
@@ -1004,7 +1050,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 83.82) (xy 134.62 83.82)
+			(xy 139.7 83.82) (xy 143.51 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1014,7 +1060,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 106.68) (xy 144.78 106.68)
+			(xy 134.62 106.68) (xy 144.78 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1024,17 +1070,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 53.34) (xy 132.08 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8680b73-c427-4b0c-a0e5-86d4040a8a8c")
-	)
-	(wire
-		(pts
-			(xy 130.81 76.2) (xy 134.62 76.2)
+			(xy 139.7 76.2) (xy 143.51 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1043,6 +1079,7 @@
 		(uuid "fe6fd51e-879e-468f-bf38-1efa68e3fcbb")
 	)
 	(symbol
+		(lib_name "R_1")
 		(lib_id "Device:R")
 		(at 144.78 102.87 0)
 		(unit 1)
@@ -1061,7 +1098,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "200R"
+		(property "Value" "22R"
 			(at 147.32 104.1399 0)
 			(effects
 				(font
@@ -1113,76 +1150,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 147.32 127 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0e2aeec1-4447-4274-8997-51fe3ed89e29")
-		(property "Reference" "R5"
-			(at 147.32 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.01R"
-			(at 147.32 123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 147.32 128.778 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 147.32 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9e7166a7-86cb-4485-9baf-1ad08cadacb6")
-		)
-		(pin "2"
-			(uuid "34689e6c-92f2-471b-bbf1-e21e0aefa239")
-		)
-		(instances
-			(project ""
-				(path "/a7057b9c-0ba6-43c1-bcfd-a46255bb5a4b"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 137.16 137.16 90)
+		(at 148.59 137.16 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1192,7 +1161,7 @@
 		(fields_autoplaced yes)
 		(uuid "1181a619-6a2d-48f6-89d4-29f9ba9a6380")
 		(property "Reference" "H8"
-			(at 134.6199 139.7 0)
+			(at 146.0499 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1201,7 +1170,7 @@
 			)
 		)
 		(property "Value" "-  MountingHole_Pad"
-			(at 137.1599 139.7 0)
+			(at 148.5899 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1210,7 +1179,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 137.16 137.16 0)
+			(at 148.59 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1219,7 +1188,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 137.16 0)
+			(at 148.59 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1228,7 +1197,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 137.16 137.16 0)
+			(at 148.59 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1250,7 +1219,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 134.62 80.01 0)
+		(at 143.51 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1259,7 +1228,7 @@
 		(fields_autoplaced yes)
 		(uuid "1830e98a-ca6f-4413-b9bd-666bd8fbfec9")
 		(property "Reference" "C5"
-			(at 138.43 78.7399 0)
+			(at 147.32 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1268,7 +1237,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 138.43 81.2799 0)
+			(at 147.32 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1277,7 +1246,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 135.5852 83.82 0)
+			(at 144.4752 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1286,7 +1255,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 134.62 80.01 0)
+			(at 143.51 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1295,7 +1264,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 134.62 80.01 0)
+			(at 143.51 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1319,148 +1288,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 132.08 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18cf7f2f-2d06-478e-99f2-5ec9f669e73c")
-		(property "Reference" "C2"
-			(at 135.89 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "50u"
-			(at 135.89 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 133.0452 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 132.08 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 132.08 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9745d1b9-c04d-43ce-8751-a0c31eedc27d")
-		)
-		(pin "2"
-			(uuid "483acc1e-fc23-495d-b29d-87d578b5bbda")
-		)
-		(instances
-			(project ""
-				(path "/a7057b9c-0ba6-43c1-bcfd-a46255bb5a4b"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 133.35 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2dde3322-2a37-4b7b-8e12-e16f9fe9ab0c")
-		(property "Reference" "C7"
-			(at 137.16 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2u"
-			(at 137.16 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 134.3152 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 133.35 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 133.35 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d08d68c3-fe9d-4472-8387-50a2a2051150")
-		)
-		(pin "2"
-			(uuid "90c8c956-397c-492e-9b50-bfa1ff9061c0")
-		)
-		(instances
-			(project ""
-				(path "/a7057b9c-0ba6-43c1-bcfd-a46255bb5a4b"
-					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 128.27 76.2 90)
+		(at 137.16 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1468,7 +1297,7 @@
 		(dnp no)
 		(uuid "2e4d32f1-37fc-4293-8710-8357bb566c49")
 		(property "Reference" "H3"
-			(at 125.7299 73.66 0)
+			(at 134.6199 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1477,7 +1306,7 @@
 			)
 		)
 		(property "Value" "+ MountingHole_Pad"
-			(at 128.2699 73.66 0)
+			(at 137.1599 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1486,7 +1315,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 128.27 76.2 0)
+			(at 137.16 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1495,7 +1324,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 76.2 0)
+			(at 137.16 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1504,7 +1333,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 128.27 76.2 0)
+			(at 137.16 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1594,7 +1423,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 120.65 99.06 90)
+		(at 132.08 99.06 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1603,7 +1432,7 @@
 		(fields_autoplaced yes)
 		(uuid "3a1f5865-da37-4a97-b750-e749dac0b4bf")
 		(property "Reference" "H5"
-			(at 118.1099 96.52 0)
+			(at 129.5399 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1612,7 +1441,7 @@
 			)
 		)
 		(property "Value" "+ MountingHole_Pad"
-			(at 120.6499 96.52 0)
+			(at 132.0799 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,7 +1450,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 120.65 99.06 0)
+			(at 132.08 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1630,7 +1459,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 99.06 0)
+			(at 132.08 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1639,7 +1468,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 120.65 99.06 0)
+			(at 132.08 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1661,7 +1490,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 143.51 133.35 0)
+		(at 154.94 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1670,7 +1499,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cc44c1a-771d-4a90-9748-410a59e51311")
 		(property "Reference" "R6"
-			(at 146.05 132.0799 0)
+			(at 157.48 132.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1678,8 +1507,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6.8R"
-			(at 146.05 134.6199 0)
+		(property "Value" "0.22R"
+			(at 157.48 134.6199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1688,7 +1517,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 141.732 133.35 90)
+			(at 153.162 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1697,7 +1526,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 133.35 0)
+			(at 154.94 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1706,7 +1535,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 143.51 133.35 0)
+			(at 154.94 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1797,78 +1626,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 119.38 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "43a6acc0-721d-4849-82a3-7a91e99dbc22")
-		(property "Reference" "C3"
-			(at 123.19 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "50u"
-			(at 123.19 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 120.3452 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 119.38 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eada846c-752f-421e-8ce3-d93ef4baa19b")
-		)
-		(pin "2"
-			(uuid "ea460d0a-6288-47b2-aa92-a31325af9a6c")
-		)
-		(instances
-			(project ""
-				(path "/a7057b9c-0ba6-43c1-bcfd-a46255bb5a4b"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 137.16 127 90)
+		(at 148.59 127 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -1876,7 +1635,7 @@
 		(dnp no)
 		(uuid "46bab9b6-1780-4b38-8bed-b6547413a2ff")
 		(property "Reference" "H7"
-			(at 134.6199 124.46 0)
+			(at 146.0499 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1885,7 +1644,7 @@
 			)
 		)
 		(property "Value" "+ MountingHole_Pad"
-			(at 137.1599 124.46 0)
+			(at 148.5899 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1894,7 +1653,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 137.16 127 0)
+			(at 148.59 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1903,7 +1662,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 127 0)
+			(at 148.59 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1912,7 +1671,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 137.16 127 0)
+			(at 148.59 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1933,78 +1692,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 154.94 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "513ddab7-d4a5-422b-9eed-f8db0d7bb4a1")
-		(property "Reference" "C8"
-			(at 158.75 132.0799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 158.75 134.6199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 155.9052 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 154.94 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f848207f-fd4f-427e-9596-ba39fc4378f9")
-		)
-		(pin "2"
-			(uuid "4148ca06-6e50-4013-a3ba-46b40f77c181")
-		)
-		(instances
-			(project ""
-				(path "/a7057b9c-0ba6-43c1-bcfd-a46255bb5a4b"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 143.51 80.01 0)
+		(at 149.86 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2013,25 +1702,23 @@
 		(fields_autoplaced yes)
 		(uuid "54d18d3f-2129-42e2-86c5-4a1045562e1a")
 		(property "Reference" "R2"
-			(at 146.05 78.7399 0)
+			(at 149.86 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "22R"
-			(at 146.05 81.2799 0)
+		(property "Value" "56R"
+			(at 149.86 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
-			(at 141.732 80.01 90)
+			(at 149.86 77.978 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2040,7 +1727,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 80.01 0)
+			(at 149.86 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2049,7 +1736,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 143.51 80.01 0)
+			(at 149.86 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2075,7 +1762,7 @@
 	(symbol
 		(lib_name "MountingHole_Pad_1")
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 113.03 53.34 90)
+		(at 123.19 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2084,7 +1771,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e87f8d3-2df7-4b3f-b8cd-c033d4158dda")
 		(property "Reference" "H1"
-			(at 110.4899 50.8 0)
+			(at 120.6499 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2093,7 +1780,7 @@
 			)
 		)
 		(property "Value" "+ MountingHole_Pad"
-			(at 113.0299 50.8 0)
+			(at 123.1899 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2102,7 +1789,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 113.03 53.34 0)
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2111,7 +1798,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 53.34 0)
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2120,7 +1807,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 113.03 53.34 0)
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2142,7 +1829,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 113.03 60.96 90)
+		(at 123.19 60.96 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2152,7 +1839,7 @@
 		(fields_autoplaced yes)
 		(uuid "8d677960-6231-425e-8524-4f1fa2575185")
 		(property "Reference" "H2"
-			(at 110.4899 63.5 0)
+			(at 120.6499 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2161,7 +1848,7 @@
 			)
 		)
 		(property "Value" "- MountingHole_Pad"
-			(at 113.0299 63.5 0)
+			(at 123.1899 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2170,7 +1857,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 113.03 60.96 0)
+			(at 123.19 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2179,7 +1866,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 60.96 0)
+			(at 123.19 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2188,7 +1875,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 113.03 60.96 0)
+			(at 123.19 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2227,7 +1914,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "50u"
+		(property "Value" "10u"
 			(at 148.59 58.4199 0)
 			(effects
 				(font
@@ -2279,17 +1966,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 128.27 83.82 90)
-		(mirror x)
+		(lib_id "Device:R")
+		(at 163.83 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ce6fc215-440a-40a3-8ef1-694e8d9d9532")
-		(property "Reference" "H4"
-			(at 125.7299 86.36 0)
+		(fields_autoplaced yes)
+		(uuid "9c771d2c-304d-47d5-a61b-c80e09ce06f9")
+		(property "Reference" "R5"
+			(at 162.5599 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2297,8 +1984,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "- MountingHole_Pad"
-			(at 128.2699 86.36 0)
+		(property "Value" "800R"
+			(at 165.0999 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2306,8 +1993,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 128.27 83.82 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 163.83 55.118 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2316,7 +2003,147 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 83.82 0)
+			(at 163.83 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 163.83 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "48e7f090-cc7c-46c4-8310-2b8578abbacd")
+		)
+		(pin "1"
+			(uuid "fa9324b0-6f12-43be-b3d0-a5339a6fde5f")
+		)
+		(instances
+			(project "Project Resonator Crossover Circuit PCB"
+				(path "/a7057b9c-0ba6-43c1-bcfd-a46255bb5a4b"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 137.16 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca845182-4e30-46e6-80c8-105d695ce779")
+		(property "Reference" "R7"
+			(at 135.8899 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "500R"
+			(at 138.4299 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+			(at 137.16 55.118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 137.16 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0ddacac1-5f93-4ea6-90d9-0c48693d5f21")
+		)
+		(pin "1"
+			(uuid "312b5164-95c7-496c-b8b4-2b29df26a28e")
+		)
+		(instances
+			(project "Project Resonator Crossover Circuit PCB"
+				(path "/a7057b9c-0ba6-43c1-bcfd-a46255bb5a4b"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 137.16 83.82 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce6fc215-440a-40a3-8ef1-694e8d9d9532")
+		(property "Reference" "H4"
+			(at 134.6199 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "- MountingHole_Pad"
+			(at 137.1599 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 137.16 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2325,7 +2152,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 128.27 83.82 0)
+			(at 137.16 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2364,7 +2191,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5600R"
+		(property "Value" "800R"
 			(at 153.6699 50.8 0)
 			(effects
 				(font
@@ -2433,7 +2260,7 @@
 				)
 			)
 		)
-		(property "Value" "0.01u"
+		(property "Value" "0.018u"
 			(at 152.4 93.98 90)
 			(effects
 				(font
@@ -2485,7 +2312,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 151.13 76.2 90)
+		(at 160.02 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2493,7 +2320,7 @@
 		(dnp no)
 		(uuid "dc66bad0-d858-431a-b061-fadaf06b1cb5")
 		(property "Reference" "C4"
-			(at 149.8599 72.39 0)
+			(at 158.7499 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2501,8 +2328,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.027u"
-			(at 152.3999 72.39 0)
+		(property "Value" "0.056u"
+			(at 161.2899 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2511,7 +2338,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 154.94 75.2348 0)
+			(at 163.83 75.2348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2520,7 +2347,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 76.2 0)
+			(at 160.02 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2529,7 +2356,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 151.13 76.2 0)
+			(at 160.02 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2554,7 +2381,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 120.65 106.68 90)
+		(at 132.08 106.68 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2564,7 +2391,7 @@
 		(fields_autoplaced yes)
 		(uuid "f92e0acf-d75b-4e14-8796-13316e52c93e")
 		(property "Reference" "H6"
-			(at 118.1099 109.22 0)
+			(at 129.5399 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2573,7 +2400,7 @@
 			)
 		)
 		(property "Value" "- MountingHole_Pad"
-			(at 120.6499 109.22 0)
+			(at 132.0799 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2582,7 +2409,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 120.65 106.68 0)
+			(at 132.08 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2591,7 +2418,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 106.68 0)
+			(at 132.08 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2600,7 +2427,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 120.65 106.68 0)
+			(at 132.08 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,7 +2466,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6800R"
+		(property "Value" "800R"
 			(at 160.0199 124.46 0)
 			(effects
 				(font

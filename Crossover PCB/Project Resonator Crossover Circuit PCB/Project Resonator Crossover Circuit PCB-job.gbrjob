@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "9.0.0"
     },
-    "CreationDate": "2025-03-22T00:35:49-04:00"
+    "CreationDate": "2025-04-04T03:51:44-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,8 +14,8 @@
       "Revision": "rev?"
     },
     "Size": {
-      "X": 10.05,
-      "Y": 12.4508
+      "X": 10.55,
+      "Y": 12.55
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -27,10 +27,10 @@
       "Layers": "Outer",
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
-      "TrackToTrack": 0.2,
-      "MinLineWidth": 0.2,
-      "TrackToRegion": 0.5,
-      "RegionToRegion": 0.5
+      "TrackToTrack": -0.0,
+      "MinLineWidth": 0.1905,
+      "TrackToRegion": 0.254,
+      "RegionToRegion": 0.254
     }
   ],
   "FilesAttributes": [
@@ -52,6 +52,16 @@
     {
       "Path": "Project Resonator Crossover Circuit PCB-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Project Resonator Crossover Circuit PCB-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "Project Resonator Crossover Circuit PCB-B_Silkscreen.gbr",
+      "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
