@@ -67,6 +67,7 @@ Get-ChildItem -Filter "*.ctm" | ForEach-Object {
 - [Kirby Meets Audio](https://youtu.be/QClvPIuW3zI?si=NcwjdGAZriBUcmHE)
 - [Crinacle](https://www.youtube.com/watch?v=tCqV3ZRcZ9g&t=1227s)
 - [Mr.T's Design Graveyard](https://youtu.be/3FGNw28xBr0?si=LEpJtPCjVtikS_FK)
+- [Morten Arnoldus](https://cdn.head-fi.org/a/10272660.pdf)
 - *Any many more...*
 
 
