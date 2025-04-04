@@ -138,7 +138,7 @@
       <TransferFunction></TransferFunction>
       <PARAMETER pi="2">
         <Name>C1</Name>
-        <Value>0.056</Value>
+        <Value>0.039</Value>
         <Unit>uF</Unit>
         <Visible>True</Visible>
       </PARAMETER>
@@ -152,7 +152,7 @@
       <TransferFunction></TransferFunction>
       <PARAMETER pi="0">
         <Name>R1</Name>
-        <Value>56.000</Value>
+        <Value>300.000</Value>
         <Unit>ohm</Unit>
         <Visible>True</Visible>
       </PARAMETER>
@@ -209,7 +209,7 @@
       <TransferFunction></TransferFunction>
       <PARAMETER pi="2">
         <Name>C1</Name>
-        <Value>0.018</Value>
+        <Value>0.012</Value>
         <Unit>uF</Unit>
         <Visible>True</Visible>
       </PARAMETER>

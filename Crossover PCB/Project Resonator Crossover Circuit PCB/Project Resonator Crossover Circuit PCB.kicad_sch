@@ -1709,7 +1709,7 @@
 				)
 			)
 		)
-		(property "Value" "56R"
+		(property "Value" "300R"
 			(at 149.86 72.39 90)
 			(effects
 				(font
@@ -2046,21 +2046,19 @@
 		(fields_autoplaced yes)
 		(uuid "ca845182-4e30-46e6-80c8-105d695ce779")
 		(property "Reference" "R7"
-			(at 135.8899 50.8 0)
+			(at 137.16 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "500R"
-			(at 138.4299 50.8 0)
+		(property "Value" "800R"
+			(at 137.16 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
@@ -2260,7 +2258,7 @@
 				)
 			)
 		)
-		(property "Value" "0.018u"
+		(property "Value" "0.012u"
 			(at 152.4 93.98 90)
 			(effects
 				(font
@@ -2328,7 +2326,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.056u"
+		(property "Value" "0.039u"
 			(at 161.2899 72.39 0)
 			(effects
 				(font
