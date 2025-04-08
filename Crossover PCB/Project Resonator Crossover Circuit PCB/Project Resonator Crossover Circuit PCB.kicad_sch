@@ -1236,7 +1236,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "4.7uF"
 			(at 147.32 81.2799 0)
 			(effects
 				(font
@@ -1914,7 +1914,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 148.59 58.4199 0)
 			(effects
 				(font
@@ -1984,7 +1984,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "800R"
+		(property "Value" "750R"
 			(at 165.0999 50.8 0)
 			(effects
 				(font
@@ -2053,7 +2053,7 @@
 				)
 			)
 		)
-		(property "Value" "800R"
+		(property "Value" "750R"
 			(at 137.16 49.53 90)
 			(effects
 				(font
@@ -2189,7 +2189,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "800R"
+		(property "Value" "750R"
 			(at 153.6699 50.8 0)
 			(effects
 				(font
@@ -2258,7 +2258,7 @@
 				)
 			)
 		)
-		(property "Value" "0.012u"
+		(property "Value" "0.012uF"
 			(at 152.4 93.98 90)
 			(effects
 				(font
@@ -2326,7 +2326,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.039u"
+		(property "Value" "0.039uF"
 			(at 161.2899 72.39 0)
 			(effects
 				(font
@@ -2464,7 +2464,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "800R"
+		(property "Value" "750R"
 			(at 160.0199 124.46 0)
 			(effects
 				(font
