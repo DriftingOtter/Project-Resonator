@@ -1,89 +1,96 @@
 ![Banner](./GitHub%20Assets/GitHub%20Banner.png)
-# __Project Resonator | *The* Open-Source IEM.__
 
+# __Project Resonator | *The* Open-Source IEM.__  
 > A love letter to the IEM/CIEM hobby.
 
-## Technologies Used & Software required
+---
 
-1. VituixCAD Ver < 2.0 (For tuning simulation) (Read below for install guide)
-2. KiCad               (For Schematic and PCB deisgn)
-3. AutoDesk Fusion     (For designing the IEM shell)
-5. OpenCTM             (For .stl 3D file compression)
-6. FPGraphTracer       (For tracking frequnecy and impedence responses from spec sheets of drivers)*
+## 🔧 Technologies Used & Software Required
 
-## Development Timeline
+1. **VituixCAD**             — Tuning simulation (see install guide below)  
+2. **KiCad**                 — Schematic and PCB design  
+3. **Autodesk Fusion**       — Designing the IEM shell  
+4. **FPGraphTracer**         — Tracking frequency and impedance responses from driver spec sheets  
 
-1. [X] Tools & Software | Wiki Entry
-2. [x] Driver Selection | Wiki Entry
-3. [+] Crossover Design | Wiki Entry
-4. [ ] Setup Acess To `.f3d` IEM Shell Models | File Acquisition & User Support
-5. [ ] Create Crossover Diagrams For RSNTR IEM | Product Developement
+---
 
-.
-.
-.
+## 📅 Development Timeline
 
-_More to come..._
+- [x] Tools & Software                        | Wiki Entry  
+- [x] Driver Selection                        | Wiki Entry  
+- [+] Crossover Design                        | Wiki Entry  
+- [ ] Setup Access To `.f3d` IEM Shell Models | File Acquisition & User Support  
+- [ ] Create Crossover Diagrams For RSNTR IEM | Product Development  
 
-## Philosophy & Reasoning
+...  
+_More to come._
 
-> I fell in love with IEMS, so I decied "why not, I'm bored".
+---
 
-## *Can I Use These Files To Build My Own IEM ?*
+## 🎧 Philosophy & Reasoning
 
-For sure! I have set the liscense to be lenient with future project that would like to use my project as a basis for their own commerical products, whilst trying to maintain a 'semi' Open-source ideology I have loved and grown accustomed too in my own comp sci sphere.
+> I fell in love with IEMs, so I decided "why not, I'm bored."
 
-I hope you all can use this as a springboard to learn more about IEMs yourself and maybe even skip some of the mistakes I made along the way and quickly get started on making your own!
+---
 
-*Remember I am still human so my design is not perfect, (far from it) but I hope it gives some what of an example of what a IEM build process kind of looks like).*
+## ❓ *Can I Use These Files To Build My Own IEM?*
 
-## Installation Guide
+Absolutely. I’ve set the license to be lenient for anyone who wants to use this as a base for their own commercial projects—while still keeping that open-source spirit that I’ve grown to love in the comp sci world.
 
-### How to install archived version of vituixCAD + Missing file paths issue [FIXED]
+I hope this gives you a head start—maybe even helps you dodge some of the mistakes I made.
 
-1. Go to [Internet Archive's Wayback machine](https://archive.org/)
-2. Paste "https://kimmosaunisto.net/"
-3. Find any version of the software before < 2018-04-25, then download + install
-4. Then open the simulation ```.vxp``` file from the project
+*Reminder: I’m still human, and this design is far from perfect—but it should give you a solid look at what an IEM build process can look like.*
 
-Most likely when you open the files it will give you a buch of errors of missing file path(s). Don't Worry! Its just because they still are using the paths on my system for finding the ```.frd``` and ```.zma``` files for the drivers.
+---
 
-To update the paths for the ```.frd``` (frequency response) and ```.zma``` (impedance response) files, click the folder icon next to the file upload section. Then, navigate to the correct folder for each BA driver in the "BA Driver Spec Sheets" directory within the project files and select the corresponding ```.frd``` or ```.zma``` file(s). This should resolve any missing path issues.
+## 🛠️ Installation Guide
 
-*(you only have to do this once)*
+### VituixCAD (Archived Version) + Fixing Missing File Paths
 
-### How to de-compress Autodesk Fusion 360 IEM Shell Files
+1. Go to [Internet Archive's Wayback Machine](https://archive.org/)  
+2. Paste: `https://kimmosaunisto.net/`  
+3. Find and download any version before **2018-04-25**  
+4. Install it and open the `.vxp` simulation file included in this project  
 
-Since the IEM Shell files are too big to upload to GitHub, I have added them to the dropbox link below, go to the site and download the folder/file(s) and de-compress them via the respective commands below w/ OpenCTM.
+You’ll probably get a bunch of “missing file path” errors—don’t worry. That just means the project is still pointing to paths from my own system.
 
-[Dropbox Link For IEM Shell Files](https://www.dropbox.com/scl/fo/7igmpw1ufs74wjp9bscd1/APTIkM8Hd0Q5tOlSX6-9Vis?rlkey=q3dak7tetpvdot7d4ondi776o&st=a5fo64j4&dl=0)
+To fix:
+- Click the folder icon next to the `.frd` or `.zma` file slot
+- Navigate to the correct folder for each BA driver (inside the `BA Driver Spec Sheets` folder in this repo)
+- Re-link the appropriate files
 
-#### Linux
-```Bash
-for file in *.ctm; do
-    ctmconv "$file" "${file%.ctm}.stl"
-done
-```
+*(You only need to do this once.)*
 
-#### Windows Powershell
-```Powershell
-Get-ChildItem -Filter "*.ctm" | ForEach-Object {
-    $output = $_.FullName -replace "\.ctm$", ".stl"
-    & ctmconv $_.FullName $output
-}
-```
+---
 
-## Authors
+### Downloading Fusion 360 IEM Shell Files
 
-- Daksh Kaul (aka. DriftingOtter)
+All IEM shell files are now hosted on **MEGA**. This includes both `.stl` files for direct printing and `.f3d` Fusion files for editing.
 
-## Credits & Citations
-- Head-Fi's DIY IEM forms and community
-- [Kozh](https://www.youtube.com/@kozh4013/videos)
-- [Kirby Meets Audio](https://youtu.be/QClvPIuW3zI?si=NcwjdGAZriBUcmHE)
-- [Crinacle](https://www.youtube.com/watch?v=tCqV3ZRcZ9g&t=1227s)
-- [Mr.T's Design Graveyard](https://youtu.be/3FGNw28xBr0?si=LEpJtPCjVtikS_FK)
-- *Any many more...*
+Since GitHub has upload limits, I’ve stored them externally here:
 
+🔗 [Mega Link For IEM Shell Files](https://mega.nz/folder/2Z4WzYDR#g-NULd1YQFsHa81YXLZzIw)
 
-*if there is anyone I didn't mention, please let me know so I can add you to the list!*
+Inside, you'll find:
+
+- `Ready-To-Prints`     | Shell prototypes you can print right away  
+- `Fusion-Shell-Models` | Editable Fusion files to tweak however you’d like
+
+---
+
+## 👨‍💻 Author
+
+- **Daksh Kaul** (aka. *DriftingOtter*)
+
+---
+
+## 🙌 Credits & Citations
+
+- Head-Fi DIY IEM forums & community  
+- [Kozh](https://www.youtube.com/@kozh4013/videos)  
+- [Kirby Meets Audio](https://youtu.be/QClvPIuW3zI?si=NcwjdGAZriBUcmHE)  
+- [Crinacle](https://www.youtube.com/watch?v=tCqV3ZRcZ9g&t=1227s)  
+- [Mr.T’s Design Graveyard](https://youtu.be/3FGNw28xBr0?si=LEpJtPCjVtikS_FK)  
+- *And many more...*  
+
+*If I forgot to credit you, shoot me a message—I’ll make sure you’re added.*
