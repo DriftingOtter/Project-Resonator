@@ -3,16 +3,12 @@
 # __Project Resonator | *The* Open-Source IEM.__  
 > A love letter to the IEM/CIEM hobby.
 
----
-
 ## 🔧 Technologies Used & Software Required
 
 1. **VituixCAD**             — Tuning simulation (see install guide below)  
 2. **KiCad**                 — Schematic and PCB design  
 3. **Autodesk Fusion**       — Designing the IEM shell  
 4. **FPGraphTracer**         — Tracking frequency and impedance responses from driver spec sheets  
-
----
 
 ## 📅 Development Timeline
 
@@ -25,13 +21,9 @@
 ...  
 _More to come._
 
----
-
 ## 🎧 Philosophy & Reasoning
 
 > I fell in love with IEMs, so I decided "why not, I'm bored."
-
----
 
 ## ❓ *Can I Use These Files To Build My Own IEM?*
 
@@ -40,8 +32,6 @@ Absolutely. I’ve set the license to be lenient for anyone who wants to use thi
 I hope this gives you a head start—maybe even helps you dodge some of the mistakes I made.
 
 *Reminder: I’m still human, and this design is far from perfect—but it should give you a solid look at what an IEM build process can look like.*
-
----
 
 ## 🛠️ Installation Guide
 
@@ -61,8 +51,6 @@ To fix:
 
 *(You only need to do this once.)*
 
----
-
 ### Downloading Fusion 360 IEM Shell Files
 
 All IEM shell files are now hosted on **MEGA**. This includes both `.stl` files for direct printing and `.f3d` Fusion files for editing.
@@ -81,8 +69,6 @@ Inside, you'll find:
 ## 👨‍💻 Author
 
 - **Daksh Kaul** (aka. *DriftingOtter*)
-
----
 
 ## 🙌 Credits & Citations
 
