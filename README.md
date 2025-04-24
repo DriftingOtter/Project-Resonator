@@ -15,8 +15,10 @@
 - [x] Tools & Software                        | Wiki Entry  
 - [x] Driver Selection                        | Wiki Entry  
 - [+] Crossover Design                        | Wiki Entry  
-- [ ] Setup Access To `.f3d` IEM Shell Models | File Acquisition & User Support  
-- [ ] Create Crossover Diagrams For RSNTR IEM | Product Development  
+
+
+- [x] Setup Access To `.f3d` IEM Shell Models | File Acquisition & User Support
+- [x] Create Crossover Diagrams For RSNTR IEM | Product Development  
 
 ...  
 _More to come._
