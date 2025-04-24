@@ -5,11 +5,23 @@
 
 ## Technologies Used & Software required
 
-1. VituixCAD Ver < 2.0       (For tuning simulation) (Read below for install guide)
-2. KiCad            (For Schematic and PCB deisgn)
-3. AutoDesk Fusion  (For designing the IEM shell)
-5. OpenCTM          (For .stl 3D file compression)
-6. FPGraphTracer    (For tracking frequnecy responses and impedence responses from spec sheets of BA drivers)
+1. VituixCAD Ver < 2.0 (For tuning simulation) (Read below for install guide)
+2. KiCad               (For Schematic and PCB deisgn)
+3. AutoDesk Fusion     (For designing the IEM shell)
+5. OpenCTM             (For .stl 3D file compression)
+6. FPGraphTracer       (For tracking frequnecy and impedence responses from spec sheets of drivers)*
+
+## Development Timeline
+
+1. [X] Tools & Software | Wiki Entry
+2. [x] Driver Selection | Wiki Entry
+3. [+] Crossover Design | Wiki Entry
+4. [ ] Setup Acess To `.f3d` IEM Shell Models | File Acquisition & User Support
+5. [ ] Create Crossover Diagrams For RSNTR IEM | Product Developement
+.
+.
+.
+_More to come..._
 
 ## Philosophy & Reasoning
 
@@ -23,7 +35,9 @@ I hope you all can use this as a springboard to learn more about IEMs yourself a
 
 *Remember I am still human so my design is not perfect, (far from it) but I hope it gives some what of an example of what a IEM build process kind of looks like).*
 
-## How to install archived version of vituixCAD + Missing file paths issue [FIXED]
+## Installation Guide
+
+### How to install archived version of vituixCAD + Missing file paths issue [FIXED]
 
 1. Go to [Internet Archive's Wayback machine](https://archive.org/)
 2. Paste "https://kimmosaunisto.net/"
@@ -36,20 +50,20 @@ To update the paths for the ```.frd``` (frequency response) and ```.zma``` (impe
 
 *(you only have to do this once)*
 
-## How to de-compress Autodesk Fusion 360 IEM Shell Files
+### How to de-compress Autodesk Fusion 360 IEM Shell Files
 
 Since the IEM Shell files are too big to upload to GitHub, I have added them to the dropbox link below, go to the site and download the folder/file(s) and de-compress them via the respective commands below w/ OpenCTM.
 
 [Dropbox Link For IEM Shell Files](https://www.dropbox.com/scl/fo/7igmpw1ufs74wjp9bscd1/APTIkM8Hd0Q5tOlSX6-9Vis?rlkey=q3dak7tetpvdot7d4ondi776o&st=a5fo64j4&dl=0)
 
-### Linux
+#### Linux
 ```Bash
 for file in *.ctm; do
     ctmconv "$file" "${file%.ctm}.stl"
 done
 ```
 
-### Windows Powershell
+#### Windows Powershell
 ```Powershell
 Get-ChildItem -Filter "*.ctm" | ForEach-Object {
     $output = $_.FullName -replace "\.ctm$", ".stl"
@@ -67,7 +81,6 @@ Get-ChildItem -Filter "*.ctm" | ForEach-Object {
 - [Kirby Meets Audio](https://youtu.be/QClvPIuW3zI?si=NcwjdGAZriBUcmHE)
 - [Crinacle](https://www.youtube.com/watch?v=tCqV3ZRcZ9g&t=1227s)
 - [Mr.T's Design Graveyard](https://youtu.be/3FGNw28xBr0?si=LEpJtPCjVtikS_FK)
-- [Morten Arnoldus](https://cdn.head-fi.org/a/10272660.pdf)
 - *Any many more...*
 
 
