@@ -18,9 +18,11 @@
 3. [+] Crossover Design | Wiki Entry
 4. [ ] Setup Acess To `.f3d` IEM Shell Models | File Acquisition & User Support
 5. [ ] Create Crossover Diagrams For RSNTR IEM | Product Developement
+
 .
 .
 .
+
 _More to come..._
 
 ## Philosophy & Reasoning
