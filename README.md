@@ -33,6 +33,45 @@ I hope this gives you a head start—maybe even helps you dodge some of the mist
 
 *Reminder: I’m still human, and this design is far from perfect—but it should give you a solid look at what an IEM build process can look like.*
 
+## Project Resonator 4 Way Passive Crossover Diagram [For 4BA Driver Configuration]
+
+```mermaid
+
+graph TD
+
+    %% === BRANCH 1: CI_22955 ===
+    Positive --> R1_750_1[750Ω]
+    R1_750_1 --> R1_750_2[750Ω]
+    R1_750_2 --> C1_10uF[10µF]
+    C1_10uF --> R1_750_3[750Ω]
+    R1_750_3 --> CI_22955["CI 22955 Driver"]
+    C1_10uF --> CI_22955
+    CI_22955 --> GND1[Ground]
+
+    %% === BRANCH 2: TWFK-30017 ===
+    Positive --> C2_0_039uF[0.039µF]
+    C2_0_039uF --> R2_300[300Ω]
+    R2_300 --> C2_4_7uF[4.7µF]
+    C2_4_7uF --> TWFK_30017["TWFK 30017 Driver"]
+    R2_300 --> TWFK_30017
+    TWFK_30017 --> GND1[Ground]
+
+    %% === BRANCH 3: BK 26824 ===
+    Positive --> C3_0_012uF[0.012µF]
+    C3_0_012uF --> R3_220[22Ω]
+    R3_220 --> BK_26824["BK 26824 Driver"]
+    C3_0_012uF --> BK_26824
+    BK_26824 --> GND1[Ground]
+
+    %% === BRANCH 4: HODVTECH ===
+    Positive --> R4_750[750Ω]
+    R4_750 --> R4_0_22[0.22Ω]
+    R4_0_22 --> HODVTECH["HODVTECH Driver"]
+    R4_750 --> HODVTECH
+    HODVTECH --> GND1[Ground]
+
+```
+
 ## 🛠️ Installation Guide
 
 ### VituixCAD (Archived Version) + Fixing Missing File Paths
