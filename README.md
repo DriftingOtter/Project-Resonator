@@ -9,6 +9,7 @@
 2. **KiCad**                 — Schematic and PCB design  
 3. **Autodesk Fusion**       — Designing the IEM shell  
 4. **FPGraphTracer**         — Tracking frequency and impedance responses from driver spec sheets  
+5. **Python + Tkinter**      — Bluetooth Control Application (see below)
 
 ## 📅 Development Timeline
 
@@ -16,7 +17,7 @@
 - [x] Driver Selection                        | Wiki Entry  
 - [+] Crossover Design                        | Wiki Entry  
 
-
+- [X] Added BLUETOOTH SUPPORT                 | Major Feature
 - [x] Setup Access To `.f3d` IEM Shell Models | File Acquisition & User Support
 - [x] Create Crossover Diagrams For RSNTR IEM | Product Development  
 
@@ -35,10 +36,51 @@ I hope this gives you a head start—maybe even helps you dodge some of the mist
 
 *Reminder: I’m still human, and this design is far from perfect—but it should give you a solid look at what an IEM build process can look like.*
 
+## 📶 Bluetooth Audio Module Tool (FSC-BT6038)
+
+A new addition to Project Resonator is a Bluetooth control tool that interfaces with the FSC-BT6038 module using AT commands via serial.
+
+You can find this tool in:
+
+```
+/Project-Resonator/Bluetooth Audio Module/
+```
+
+### ⚙️ How to Run the Bluetooth Tool
+
+1. Navigate to the directory:
+   ```bash
+   cd "Project-Resonator/Bluetooth Audio Module"
+   ```
+
+2. Create and activate the virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install the required libraries:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Launch the GUI tool:
+   ```bash
+   python main.py
+   ```
+
+### ⚠️ Warning
+
+> This code is currently **untested**, as I am in the process of purchasing the FSC-BT6038 module. Use it at your own discretion, and validate the functionality on your setup before relying on it for critical builds.
+
+### 📄 Official Module Documentation
+
+Refer to the official programming documentation for the FSC-BT6038 module here:  
+🔗 [BT6038A Programming User Guide](https://document.feasycom.com/docs/audio/BT6038_EN/latest/BT6038A_programming_user_guide.html)
+
 ## Project Resonator 4 Way Passive Crossover Diagram [For 4BA Driver Configuration]
 
 ```mermaid
-
 graph TD
 
     %% === BRANCH 1: CI_22955 ===
@@ -71,7 +113,6 @@ graph TD
     R4_0_22 --> HODVTECH["HODVTECH Driver"]
     R4_750 --> HODVTECH
     HODVTECH --> GND1[Ground]
-
 ```
 
 ## 🛠️ Installation Guide
@@ -121,3 +162,4 @@ Inside, you'll find:
 - *And many more...*  
 
 *If I forgot to credit you, shoot me a message—I’ll make sure you’re added.*
+
