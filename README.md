@@ -37,43 +37,6 @@ I hope this gives you a head start—maybe even helps you dodge some of the mist
 
 *Reminder: I’m still human, and this design is far from perfect—but it should give you a solid look at what an IEM build process can look like.*
 
-## 📶 Bluetooth Audio Module Tool (FSC-BT6038)
-
-A new addition to Project Resonator is a Bluetooth control tool that interfaces with the FSC-BT6038 module using AT commands via serial.
-
-You can find this tool in:
-
-```
-/Project-Resonator/Bluetooth Audio Module/
-```
-
-### ⚙️ How to Run the Bluetooth Tool
-
-1. Navigate to the directory:
-   ```bash
-   cd "Project-Resonator/Bluetooth Audio Module"
-   ```
-
-2. Create and activate the virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install the required libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Launch the GUI tool:
-   ```bash
-   python main.py
-   ```
-
-### ⚠️ Warning
-
-> This code is currently **untested**, as I am in the process of purchasing the FSC-BT6038 module. Use it at your own discretion, and validate the functionality on your setup before relying on it for critical builds.
-
 ### 📄 Official Module Documentation
 
 Refer to the official programming documentation for the FSC-BT6038 module here:  
