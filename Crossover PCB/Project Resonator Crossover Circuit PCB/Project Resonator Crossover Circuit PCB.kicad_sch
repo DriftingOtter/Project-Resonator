@@ -613,7 +613,7 @@
 		)
 	)
 	(junction
-		(at 144.78 106.68)
+		(at 148.59 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "01f180f8-065d-4bb6-8e0e-c032a90629a4")
@@ -637,10 +637,10 @@
 		(uuid "36655fe5-72af-4c1e-b699-68b1a3569294")
 	)
 	(junction
-		(at 166.37 106.68)
+		(at 166.37 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5c0b35dc-b1f9-4862-b2ec-6d197f2bcafc")
+		(uuid "54c91c76-6220-4ed0-acaf-50ec61f2b453")
 	)
 	(junction
 		(at 144.78 53.34)
@@ -649,7 +649,7 @@
 		(uuid "6089c8b0-36c9-46da-b140-d6ed9fbe0865")
 	)
 	(junction
-		(at 144.78 99.06)
+		(at 146.05 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75832307-8274-442e-adb6-3a7a09da5f90")
@@ -780,6 +780,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 93.98) (xy 143.51 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "325e8744-68d8-43cf-98f5-39475e8e1cc4")
+	)
+	(wire
+		(pts
 			(xy 154.94 127) (xy 154.94 129.54)
 		)
 		(stroke
@@ -800,7 +810,17 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 99.06) (xy 144.78 99.06)
+			(xy 148.59 109.22) (xy 144.78 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ad8c79c-68fe-4058-8a66-632296616af8")
+	)
+	(wire
+		(pts
+			(xy 143.51 93.98) (xy 146.05 93.98)
 		)
 		(stroke
 			(width 0)
@@ -810,7 +830,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 99.06) (xy 148.59 99.06)
+			(xy 146.05 93.98) (xy 147.32 93.98)
 		)
 		(stroke
 			(width 0)
@@ -850,6 +870,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 106.68) (xy 134.62 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cd6827d-01cd-4add-abcc-8cab24a9fa94")
+	)
+	(wire
+		(pts
 			(xy 175.26 87.63) (xy 177.8 87.63)
 		)
 		(stroke
@@ -880,6 +910,46 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 97.79) (xy 144.78 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84dec318-7c61-47c7-85be-ba9297c24728")
+	)
+	(wire
+		(pts
+			(xy 146.05 97.79) (xy 144.78 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88390afc-52e8-4c3b-b10c-2638ca8e0ceb")
+	)
+	(wire
+		(pts
+			(xy 146.05 93.98) (xy 146.05 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8df8493e-a1b9-4320-b467-9d64af6a88df")
+	)
+	(wire
+		(pts
+			(xy 166.37 110.49) (xy 166.37 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92d950cf-10e6-4e31-bf9c-6b6b86ffc69f")
+	)
+	(wire
+		(pts
 			(xy 151.13 137.16) (xy 154.94 137.16)
 		)
 		(stroke
@@ -897,6 +967,16 @@
 			(type default)
 		)
 		(uuid "a8ca1e0a-ac55-4baa-b771-8d1d583f2d3e")
+	)
+	(wire
+		(pts
+			(xy 144.78 109.22) (xy 144.78 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a93164ec-3b45-4b86-9b86-cb9ff667be1e")
 	)
 	(wire
 		(pts
@@ -980,16 +1060,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 93.98) (xy 166.37 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd21733b-96b8-4ca5-9d04-20cab15e05ea")
-	)
-	(wire
-		(pts
 			(xy 175.26 87.63) (xy 175.26 99.06)
 		)
 		(stroke
@@ -1010,7 +1080,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 106.68) (xy 166.37 127)
+			(xy 147.32 93.98) (xy 147.32 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6c1d9a1-3e61-441e-b7f0-e092a5981fb0")
+	)
+	(wire
+		(pts
+			(xy 166.37 93.98) (xy 166.37 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1030,6 +1110,36 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 99.06) (xy 134.62 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de59976c-6d6c-46a8-a2ff-aa0ae54fb38f")
+	)
+	(wire
+		(pts
+			(xy 148.59 110.49) (xy 148.59 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0cf0f5e-b659-457d-a3e2-836cba009b60")
+	)
+	(wire
+		(pts
+			(xy 147.32 99.06) (xy 148.59 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5299c01-aca8-4e04-97ec-fa9ea35995ad")
+	)
+	(wire
+		(pts
 			(xy 144.78 53.34) (xy 148.59 53.34)
 		)
 		(stroke
@@ -1040,7 +1150,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 106.68) (xy 166.37 106.68)
+			(xy 148.59 110.49) (xy 166.37 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1060,7 +1170,17 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 106.68) (xy 144.78 106.68)
+			(xy 143.51 110.49) (xy 143.51 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1e5e77c-b0d7-490f-8ba7-74ff4fa317bf")
+	)
+	(wire
+		(pts
+			(xy 143.51 110.49) (xy 148.59 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1161,21 +1281,19 @@
 		(fields_autoplaced yes)
 		(uuid "1181a619-6a2d-48f6-89d4-29f9ba9a6380")
 		(property "Reference" "H8"
-			(at 146.0499 139.7 0)
+			(at 147.32 130.81 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "-  MountingHole_Pad"
-			(at 148.5899 139.7 0)
+		(property "Value" "-  MNT PAD"
+			(at 147.32 133.35 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
@@ -1305,7 +1423,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+ MountingHole_Pad"
+		(property "Value" "+ MNT PAD"
 			(at 137.1599 73.66 0)
 			(effects
 				(font
@@ -1365,7 +1483,7 @@
 		(fields_autoplaced yes)
 		(uuid "34fd39f5-aaf8-4baa-bb18-36c1b07b4f26")
 		(property "Reference" "H9"
-			(at 182.8801 85.09 0)
+			(at 184.15 86.3599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1373,8 +1491,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+ MountingHole_Pad"
-			(at 180.3401 85.09 0)
+		(property "Value" "+ MNT PAD"
+			(at 184.15 88.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1432,21 +1550,19 @@
 		(fields_autoplaced yes)
 		(uuid "3a1f5865-da37-4a97-b750-e749dac0b4bf")
 		(property "Reference" "H5"
-			(at 129.5399 96.52 0)
+			(at 130.81 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "+ MountingHole_Pad"
-			(at 132.0799 96.52 0)
+		(property "Value" "+ MNT PAD"
+			(at 130.81 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
@@ -1569,7 +1685,7 @@
 		(fields_autoplaced yes)
 		(uuid "3dbdb22c-6b52-45ae-b617-44fc0fa19f21")
 		(property "Reference" "H10"
-			(at 182.8801 96.52 0)
+			(at 184.15 92.7099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1577,8 +1693,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_Pad"
-			(at 180.3401 96.52 0)
+		(property "Value" "- MNT PAD"
+			(at 184.15 95.2499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1643,7 +1759,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "+ MountingHole_Pad"
+		(property "Value" "+ MNT PAD"
 			(at 148.5899 124.46 0)
 			(effects
 				(font
@@ -1771,21 +1887,19 @@
 		(fields_autoplaced yes)
 		(uuid "5e87f8d3-2df7-4b3f-b8cd-c033d4158dda")
 		(property "Reference" "H1"
-			(at 120.6499 50.8 0)
+			(at 121.92 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "+ MountingHole_Pad"
-			(at 123.1899 50.8 0)
+		(property "Value" "+ MNT PAD"
+			(at 121.92 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
@@ -1839,21 +1953,19 @@
 		(fields_autoplaced yes)
 		(uuid "8d677960-6231-425e-8524-4f1fa2575185")
 		(property "Reference" "H2"
-			(at 120.6499 63.5 0)
+			(at 121.92 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "- MountingHole_Pad"
-			(at 123.1899 63.5 0)
+		(property "Value" "- MNT PAD"
+			(at 121.92 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
@@ -2122,7 +2234,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "- MountingHole_Pad"
+		(property "Value" "- MNT PAD"
 			(at 137.1599 86.36 0)
 			(effects
 				(font
@@ -2389,21 +2501,19 @@
 		(fields_autoplaced yes)
 		(uuid "f92e0acf-d75b-4e14-8796-13316e52c93e")
 		(property "Reference" "H6"
-			(at 129.5399 109.22 0)
+			(at 130.81 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "- MountingHole_Pad"
-			(at 132.0799 109.22 0)
+		(property "Value" "- MNT PAD"
+			(at 130.81 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"

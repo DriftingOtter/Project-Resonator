@@ -13,13 +13,14 @@
 
 ## 📅 Development Timeline
 
+- [x] Modified PCB Shape To Wrap Entire Shell | PCB Design
+- [x] Re-arranged Drivers To Fit Better       | Drivers
+- [X] Created New IEM Colorways               | Design & Prototyping
+- [+] [Modular, Node-based Tuning Software](https://github.com/DriftingOtter/EarCanvas)     | Software
+
 - [x] Tools & Software                        | Wiki Entry  
 - [x] Driver Selection                        | Wiki Entry  
 - [+] Crossover Design                        | Wiki Entry  
-
-- [X] Added BLUETOOTH SUPPORT                 | Major Feature
-- [x] Setup Access To `.f3d` IEM Shell Models | File Acquisition & User Support
-- [x] Create Crossover Diagrams For RSNTR IEM | Product Development  
 
 ...  
 _More to come._
