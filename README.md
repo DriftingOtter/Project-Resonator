@@ -9,7 +9,6 @@
 2. **KiCad**                 — Schematic and PCB design  
 3. **Autodesk Fusion**       — Designing the IEM shell  
 4. **FPGraphTracer**         — Tracking frequency and impedance responses from driver spec sheets  
-5. **Python + Tkinter**      — Bluetooth Control Application (see below)
 
 ## 📅 Development Timeline
 
