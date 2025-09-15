@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--VituixCAD PROJECT FILE-->
+<SPEAKER>
+  <Description></Description>
+  <ReferenceAngle>0</ReferenceAngle>
+  <PeakNotchAna>True</PeakNotchAna>
+  <SPLTarget>
+    <HzLow>100.5</HzLow>
+    <dBLow>68.5</dBLow>
+    <HzHigh>5034.4</HzHigh>
+    <dBHigh>41.4</dBHigh>
+  </SPLTarget>
+  <PowerTarget>
+    <HzLow>44.7</HzLow>
+    <dBLow>46.5</dBLow>
+    <HzHigh>5452.9</HzHigh>
+    <dBHigh>45.1</dBHigh>
+  </PowerTarget>
+  <WAY wi="0">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>True</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name>CI_22955</Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_CI_22955\</ResponseFile>
+      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_HODVTEC-31618\Impedence_Response.zma</ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+      <RESPONSE ri="0">
+        <FileHeader>Frequnecy_Response.frd</FileHeader>
+        <Hor>0</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+    </DRIVER>
+    <FILTER xi="0">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>750.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="1">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>750.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="2">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>10.000</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="3">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>750.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+  </WAY>
+  <WAY wi="1">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>True</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name>TWFK_30017</Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>True</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_TWFK_30017\</ResponseFile>
+      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_TWFK_30017\Impedence_Response.zma</ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+      <RESPONSE ri="0">
+        <FileHeader>Frequnecy_Response.frd</FileHeader>
+        <Hor>0</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+    </DRIVER>
+    <FILTER xi="0">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>0.039</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="1">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>300.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="2">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>4.700</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+  </WAY>
+  <WAY wi="2">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>True</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name>BK_26824</Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>True</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_BK_26824\</ResponseFile>
+      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_BK_26824\Impedence_Response.zma</ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+      <RESPONSE ri="0">
+        <FileHeader>Frequency_Response.frd</FileHeader>
+        <Hor>0</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+    </DRIVER>
+    <FILTER xi="0">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>0.012</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="1">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>22.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+  </WAY>
+  <WAY wi="3">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>True</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>True</Invert>
+    <DRIVER di="0">
+      <Name>HODVTECH</Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_HODVTEC-31618\</ResponseFile>
+      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_HODVTEC-31618\Impedence_Response.zma</ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+      <RESPONSE ri="0">
+        <FileHeader>Frequnecy_Response.frd</FileHeader>
+        <Hor>0</Hor>
+        <Ver>0</Ver>
+      </RESPONSE>
+    </DRIVER>
+    <FILTER xi="0">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>750.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="1">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>0.220</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+  </WAY>
+  <WAY wi="4">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>False</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name>CI CLONE</Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_CI_22955\</ResponseFile>
+      <ImpedanceFile>C:\Users\daksh\Documents\Project Resonator\BA Driver Spec Sheets\Knowles_CI_22955\Impedence_Response.zma</ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+    </DRIVER>
+    <FILTER xi="0">
+      <FilterType>Passive R1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Series Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="0">
+        <Name>R1</Name>
+        <Value>5600.000</Value>
+        <Unit>ohm</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="1">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>50.000</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="2">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>50.000</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+    <FILTER xi="3">
+      <FilterType>Passive C1</FilterType>
+      <Shape></Shape>
+      <Order>0</Order>
+      <Connection>Shunt Com</Connection>
+      <Bypass>False</Bypass>
+      <TransferFunction></TransferFunction>
+      <PARAMETER pi="2">
+        <Name>C1</Name>
+        <Value>50.000</Value>
+        <Unit>uF</Unit>
+        <Visible>True</Visible>
+      </PARAMETER>
+    </FILTER>
+  </WAY>
+  <WAY wi="5">
+    <DriverCount>1</DriverCount>
+    <DriverConn>0</DriverConn>
+    <Enabled>False</Enabled>
+    <CommonResponse>True</CommonResponse>
+    <Gain>1.000</Gain>
+    <Delay>0.0</Delay>
+    <Invert>False</Invert>
+    <DRIVER di="0">
+      <Name></Name>
+      <LocationX>0.0</LocationX>
+      <LocationY>0.0</LocationY>
+      <LocationZ>0.0</LocationZ>
+      <RotationX>0</RotationX>
+      <RotationY>0</RotationY>
+      <ResponseScale>1.000</ResponseScale>
+      <ResponseDelay>0.0</ResponseDelay>
+      <ResponseInvert>False</ResponseInvert>
+      <ExtendedData>False</ExtendedData>
+      <ResponseFile></ResponseFile>
+      <ImpedanceFile></ImpedanceFile>
+      <ImpedanceScale>1.000</ImpedanceScale>
+    </DRIVER>
+  </WAY>
+</SPEAKER>
