@@ -13,9 +13,16 @@
 
 ## 📅 Development Timeline
 
+- [x] Moved crossover simulation to the latest VituixCAD (old version archived under `/legacy`) | Crossover  
+- [x] Updated driver setup to CI22955 + BK23824 + 2× SWFK 31736 | Drivers  
+- [x] Removed PCB requirement in favor of direct SMD soldering (PCB file kept for reference) | Assembly  
+- [x] Removed outdated SMD components list (will add new sourcing guide soon) | Documentation  
+- [+] First physical prototype in progress thanks to preliminary funding | Prototyping
+
 - [x] Modified PCB Shape To Wrap Entire Shell | PCB Design
 - [x] Re-arranged Drivers To Fit Better       | Drivers
 - [X] Created New IEM Colorways               | Design & Prototyping
+
 - [+] [Modular, Node-based Tuning Software](https://github.com/DriftingOtter/EarCanvas)     | Software
 
 - [x] Tools & Software                        | Wiki Entry  
@@ -37,56 +44,61 @@ I hope this gives you a head start—maybe even helps you dodge some of the mist
 
 *Reminder: I’m still human, and this design is far from perfect—but it should give you a solid look at what an IEM build process can look like.*
 
-### 📄 Official Module Documentation
-
-Refer to the official programming documentation for the FSC-BT6038 module here:  
-🔗 [BT6038A Programming User Guide](https://document.feasycom.com/docs/audio/BT6038_EN/latest/BT6038A_programming_user_guide.html)
-
 ## Project Resonator 4 Way Passive Crossover Diagram [For 4BA Driver Configuration]
 
 ```mermaid
 graph TD
+    A["Input Signal<br/>100mV @ 0s"] --> B["18Ω"]
+    
+    B --> C["Junction Point"]
+    
+    %% High Frequency Path (Top Branch)
+    C --> D["1kΩ"]
+    D --> E["2kΩ"]
+    D --> F["2.2µF"]
+    F --> GND1["Ground"]
+    E --> G["D1 CL22955<br/>Woofer BA Driver"]
+    
+    %% Mid-High Frequency Path (Second Branch)
+    C --> H["470nF"]
+    H --> I["5.6Ω"]
+    H --> J["10µF"]
+    J --> K["D2 BK 26824<br/>Mid-High Driver"]
+    J --> GND2["Ground"]
+    I --> GND3["Ground"]
+    
+    %% Mid-Low Frequency Path (Third Branch)
+    C --> L["10Ω"]
+    L --> M["4.7µF"]
+    M --> N["D3 SWFK 31736<br/>Mid-Low Driver"]
+    
+    %% Low Frequency Path (Fourth Branch)
+    C --> O["3.3Ω"]
+    O --> P["D4 SWFK 31736<br/>Low Frequency Driver"]
 
-    %% === BRANCH 1: CI_22955 ===
-    Positive --> R1_750_1[750Ω]
-    R1_750_1 --> R1_750_2[750Ω]
-    R1_750_2 --> C1_10uF[10µF]
-    C1_10uF --> R1_750_3[750Ω]
-    R1_750_3 --> CI_22955["CI 22955 Driver"]
-    C1_10uF --> CI_22955
-    CI_22955 --> GND1[Ground]
-
-    %% === BRANCH 2: TWFK-30017 ===
-    Positive --> C2_0_039uF[0.039µF]
-    C2_0_039uF --> R2_300[300Ω]
-    R2_300 --> C2_4_7uF[4.7µF]
-    C2_4_7uF --> TWFK_30017["TWFK 30017 Driver"]
-    R2_300 --> TWFK_30017
-    TWFK_30017 --> GND1[Ground]
-
-    %% === BRANCH 3: BK 26824 ===
-    Positive --> C3_0_012uF[0.012µF]
-    C3_0_012uF --> R3_220[22Ω]
-    R3_220 --> BK_26824["BK 26824 Driver"]
-    C3_0_012uF --> BK_26824
-    BK_26824 --> GND1[Ground]
-
-    %% === BRANCH 4: HODVTECH ===
-    Positive --> R4_750[750Ω]
-    R4_750 --> R4_0_22[0.22Ω]
-    R4_0_22 --> HODVTECH["HODVTECH Driver"]
-    R4_750 --> HODVTECH
-    HODVTECH --> GND1[Ground]
+    
+    classDef driver fill:#ffffff,stroke:#000000,stroke-width:3px,color:#000000
+    classDef resistor fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    classDef capacitor fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    classDef input fill:#ffffff,stroke:#000000,stroke-width:3px,color:#000000
+    classDef ground fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    classDef junction fill:#ffffff,stroke:#000000,stroke-width:3px,color:#000000
+    
+    class G,K,N,P driver
+    class B,D,E,I,L,O resistor
+    class F,H,J,M capacitor
+    class A input
+    class GND1,GND2,GND3,GND4,GND5,GND6,GND7 ground
+    class C junction
 ```
 
 ## 🛠️ Installation Guide
 
-### VituixCAD (Archived Version) + Fixing Missing File Paths
+### VituixCAD + Fixing Missing File Paths
 
-1. Go to [Internet Archive's Wayback Machine](https://archive.org/)  
-2. Paste: `https://kimmosaunisto.net/`  
-3. Find and download any version before **2018-04-25**  
-4. Install it and open the `.vxp` simulation file included in this project  
+1. Go to `https://kimmosaunisto.net/`
+2. Find and download latest version
+3. Install it and open the `.vxp` simulation file included in this project  
 
 You’ll probably get a bunch of “missing file path” errors—don’t worry. That just means the project is still pointing to paths from my own system.
 
