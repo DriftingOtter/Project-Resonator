@@ -10,7 +10,7 @@
   <KeywordVer>ver</KeywordVer>
   <AngleMultiplier>1</AngleMultiplier>
   <XMin>20</XMin>
-  <XMax>20000</XMax>
+  <XMax>30000</XMax>
   <Interpolate>True</Interpolate>
   <UserAnglesHor />
   <UserAnglesVer />
@@ -1038,7 +1038,7 @@
       <GUID />
       <PARAM pi="0">
         <Name>R</Name>
-        <Value>5.6</Value>
+        <Value>3.3</Value>
         <Unit>Ω</Unit>
         <Optimize>False</Optimize>
         <Expression />
@@ -1282,7 +1282,7 @@
       <GUID />
       <PARAM pi="0">
         <Name>R</Name>
-        <Value>18</Value>
+        <Value>10</Value>
         <Unit>Ω</Unit>
         <Optimize>False</Optimize>
         <Expression />
