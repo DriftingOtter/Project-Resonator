@@ -47,7 +47,7 @@ I hope this gives you a head start—maybe even helps you dodge some of the mist
 
 ```mermaid
 graph TD
-    A["Input Signal<br/>100mV @ 0s"] --> B["18Ω"]
+    A["Input Signal<br/>100mV @ 0s"] --> B["10Ω"]
     
     B --> C["Junction Point"]
     
@@ -56,24 +56,24 @@ graph TD
     D --> E["2kΩ"]
     D --> F["2.2µF"]
     F --> GND1["Ground"]
-    E --> G["D1 CL22955<br/>Woofer BA Driver"]
+    E --> G["D1 CL22955<br/>Sub-Woofer Driver"]
     
     %% Mid-High Frequency Path (Second Branch)
     C --> H["470nF"]
-    H --> I["5.6Ω"]
+    H --> I["3.3Ω"]
     H --> J["10µF"]
-    J --> K["D2 BK 26824<br/>Mid-High Driver"]
+    J --> K["D2 BK 26824<br/>Bass-Mid Driver"]
     J --> GND2["Ground"]
     I --> GND3["Ground"]
     
     %% Mid-Low Frequency Path (Third Branch)
     C --> L["10Ω"]
     L --> M["4.7µF"]
-    M --> N["D3 SWFK 31736<br/>Mid-Low Driver"]
+    M --> N["D3 SWFK 31736<br/>Mid-High Driver"]
     
     %% Low Frequency Path (Fourth Branch)
     C --> O["3.3Ω"]
-    O --> P["D4 SWFK 31736<br/>Low Frequency Driver"]
+    O --> P["D4 SWFK 31736<br/>High-Air Driver"]
 
     
     classDef driver fill:#ffffff,stroke:#000000,stroke-width:3px,color:#000000
