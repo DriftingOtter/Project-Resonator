@@ -10,6 +10,8 @@
 3. **Autodesk Fusion**       — Designing the IEM shell  
 4. **FPGraphTracer**         — Tracking frequency and impedance responses from driver spec sheets  
 
+[Youtube Playlist For Addional IEM Building Resources](https://youtube.com/playlist?list=PL4ahDGGN5zBFhmGqVUoBdOnjuF_9HXV5L&si=1wQDmEUnnXoC1L7I)
+
 ## 📅 Development Timeline
 
 - [x] Moved crossover simulation to the latest VituixCAD (old version archived under `/legacy`) | Crossover  
