@@ -49,48 +49,51 @@ I hope this gives you a head start—maybe even helps you dodge some of the mist
 
 ```mermaid
 graph TD
-    A["Input Signal<br/>100mV @ 0s"] --> B["10Ω"]
-    
-    B --> C["Junction Point"]
-    
-    %% High Frequency Path (Top Branch)
-    C --> D["1kΩ"]
-    D --> E["2kΩ"]
-    D --> F["2.2µF"]
-    F --> GND1["Ground"]
-    E --> G["D1 CL22955<br/>Sub-Woofer Driver"]
-    
-    %% Mid-High Frequency Path (Second Branch)
-    C --> H["470nF"]
-    H --> I["3.3Ω"]
-    H --> J["10µF"]
-    J --> K["D2 BK 26824<br/>Bass-Mid Driver"]
-    J --> GND2["Ground"]
-    I --> GND3["Ground"]
-    
-    %% Mid-Low Frequency Path (Third Branch)
-    C --> L["10Ω"]
-    L --> M["4.7µF"]
-    M --> N["D3 SWFK 31736<br/>Mid-High Driver"]
-    
-    %% Low Frequency Path (Fourth Branch)
-    C --> O["3.3Ω"]
-    O --> P["D4 SWFK 31736<br/>High-Air Driver"]
+    %% Input + L-pad
+    A["AC Source
+    1V, 1Ω"] --> Rseries["22Ω"]
+    Rseries --> Rshunt["6.8Ω"]
+    Rshunt --> GND1["Ground"]
 
-    
-    classDef driver fill:#ffffff,stroke:#000000,stroke-width:3px,color:#000000
-    classDef resistor fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
-    classDef capacitor fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
-    classDef input fill:#ffffff,stroke:#000000,stroke-width:3px,color:#000000
-    classDef ground fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
-    classDef junction fill:#ffffff,stroke:#000000,stroke-width:3px,color:#000000
-    
-    class G,K,N,P driver
-    class B,D,E,I,L,O resistor
-    class F,H,J,M capacitor
+    %% CI 22955 Branch 
+    Rseries --> R3["910Ω"]
+    R3 --> R4["910Ω"]
+    R3 --> C3["10µF"]
+    C3 --> GND3["Ground"]
+    R4 --> D1["CI 22955 
+    (Sub-Bass)"]
+
+    %% BK 26824 Branch
+    Rseries --> C1["470nF"]
+    C1 --> Rbk_shunt["6.8Ω"]
+    Rbk_shunt --> GND2["Ground"]
+    C1 --> C2["10µF"]
+    C2 --> D2["BK 26824
+    (Mid) 
+    (Inversed Polarity)"]
+
+    %% SWFK 31736 Pair 
+    Rseries --> C4["10µF"]
+    C4 --> D3["SWFK 31736 
+    (Mid-High)"]
+    Rseries --> C5["4.7µF"]
+    C5 --> D4["SWFK 31736 
+    (High-Air) 
+    (Inversed Polarity)"]
+
+    classDef driver fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    classDef resistor fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
+    classDef capacitor fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
+    classDef input fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    classDef junction fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
+    classDef ground fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
+
     class A input
-    class GND1,GND2,GND3,GND4,GND5,GND6,GND7 ground
-    class C junction
+    class D1,D2,D3,D4 driver
+    class Rseries,Rshunt,Rbk_shunt,R3,R4 resistor
+    class C1,C2,C3,C4,C5 capacitor
+    class GND1,GND2,GND3 ground
+    class J1 junction
 ```
 
 ## 🛠️ Installation Guide
