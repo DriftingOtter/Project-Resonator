@@ -14,15 +14,12 @@
 
 ## 📅 Development Timeline
 
+
 - [x] Moved crossover simulation to the latest VituixCAD (old version archived under `/legacy`) | Crossover  
 - [x] Updated driver setup to CI22955 + BK23824 + 2× SWFK 31736 | Drivers  
 - [x] Removed PCB requirement in favor of direct SMD soldering (PCB file kept for reference) | Assembly  
 - [x] Removed outdated SMD components list (will add new sourcing guide soon) | Documentation  
-- [+] First physical prototype in progress thanks to preliminary funding | Prototyping
-
-- [x] Modified PCB Shape To Wrap Entire Shell | PCB Design
-- [x] Re-arranged Drivers To Fit Better       | Drivers
-- [X] Created New IEM Colorways               | Design & Prototyping
+- [X] First physical prototype in progress thanks to preliminary funding | Prototyping
 
 - [+] [Modular, Node-based Tuning Software](https://github.com/DriftingOtter/EarCanvas)     | Software
 
@@ -48,52 +45,40 @@ I hope this gives you a head start—maybe even helps you dodge some of the mist
 ## Project Resonator 4 Way Passive Crossover Diagram [For 4BA Driver Configuration]
 
 ```mermaid
-graph TD
-    %% Input + L-pad
-    A["AC Source
-    1V, 1Ω"] --> Rseries["22Ω"]
-    Rseries --> Rshunt["6.8Ω"]
-    Rshunt --> GND1["Ground"]
-
-    %% CI 22955 Branch 
-    Rseries --> R3["910Ω"]
-    R3 --> R4["910Ω"]
-    R3 --> C3["10µF"]
-    C3 --> GND3["Ground"]
-    R4 --> D1["CI 22955 
-    (Sub-Bass)"]
-
-    %% BK 26824 Branch
-    Rseries --> C1["470nF"]
-    C1 --> Rbk_shunt["6.8Ω"]
-    Rbk_shunt --> GND2["Ground"]
-    C1 --> C2["10µF"]
-    C2 --> D2["BK 26824
-    (Mid) 
-    (Inversed Polarity)"]
-
-    %% SWFK 31736 Pair 
-    Rseries --> C4["10µF"]
-    C4 --> D3["SWFK 31736 
-    (Mid-High)"]
-    Rseries --> C5["4.7µF"]
-    C5 --> D4["SWFK 31736 
-    (High-Air) 
-    (Inversed Polarity)"]
-
-    classDef driver fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
-    classDef resistor fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
-    classDef capacitor fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
-    classDef input fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
-    classDef junction fill:#ffffff,stroke:#000000,stroke-width:2px,color:#000000
-    classDef ground fill:#ffffff,stroke:#000000,stroke-width:1.5px,color:#000000
-
-    class A input
-    class D1,D2,D3,D4 driver
-    class Rseries,Rshunt,Rbk_shunt,R3,R4 resistor
-    class C1,C2,C3,C4,C5 capacitor
-    class GND1,GND2,GND3 ground
-    class J1 junction
+graph LR
+    Input[Source Input] --> Woofer_Path[Woofer Path<br/>CI-22955]
+    Input --> Mid_Path[Mid Path<br/>BK-26824]
+    Input --> High_Path[High Path<br/>SWFK-31736]
+    
+    Woofer_Path --> R1[22Ω Series]
+    R1 --> C1[4.7µF Parallel]
+    C1 --> Woofer[CI-22955<br/>Woofer]
+    C1 --> GND1[GND]
+    
+    Mid_Path --> C2[10µF Series]
+    C2 --> R2[22Ω Series]
+    R2 --> C3[4.7µF Parallel]
+    C3 --> Mids[BK-26824<br/>Mids]
+    C3 --> GND2[GND]
+    
+    High_Path --> T1_Path[Tweeter 1 Path<br/>Damped]
+    High_Path --> T2_Path[Tweeter 2 Path<br/>Light]
+    
+    T1_Path --> C4[2.2µF Series]
+    C4 --> R3[6.8Ω Parallel]
+    R3 --> Tweeter1[SWFK-31736<br/>Tweeter 1]
+    R3 --> GND3[GND]
+    
+    T2_Path --> C5[2.2µF Series]
+    C5 --> R4[22Ω Parallel]
+    R4 --> Tweeter2[SWFK-31736<br/>Tweeter 2]
+    R4 --> GND4[GND]
+    
+    style Woofer fill:#1a1a1a
+    style Mids fill:#1a1a1a
+    style Tweeter1 fill:#1a1a1a
+    style Tweeter2 fill:#1a1a1a
+    style Input fill:#1a1a1a
 ```
 
 ## 🛠️ Installation Guide
