@@ -1,0 +1,14 @@
+Warning: Width correction constrained.  The width correction value must be in the range of [0.000001 mm; -0.000002 mm] for the current design rules.
+Warning: Width correction constrained.  The width correction value must be in the range of [0.000001 mm; -0.000002 mm] for the current design rules.
+Plotted to '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-F_Cu.gbr'.
+Plotted to '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-B_Cu.gbr'.
+Plotted to '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-F_Paste.gbr'.
+Plotted to '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-B_Paste.gbr'.
+Plotted to '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-F_Silkscreen.gbr'.
+Plotted to '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-B_Silkscreen.gbr'.
+Plotted to '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-F_Mask.gbr'.
+Plotted to '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-B_Mask.gbr'.
+Plotted to '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-Edge_Cuts.gbr'.
+Created Gerber job file '/Users/daksh/Documents/Project-Resonator/Crossover PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB/Project Resonator Crossover Circuit PCB-job.gbrjob'.
+Info: Done.
+Info: Done.
