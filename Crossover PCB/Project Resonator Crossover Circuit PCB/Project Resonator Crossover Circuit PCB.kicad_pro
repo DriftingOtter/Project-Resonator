@@ -521,7 +521,7 @@
       "plot": "Project Resonator Crossover Circuit PCB/4BA PCB Crossover Gerber and Drill Files/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../Project Resonator Crossover Circuit PCB.step",
+      "step": "../../../../Downloads/Project Resonator Crossover Circuit PCB.step",
       "svg": "",
       "vrml": "../Project Resonator Crossover Circuit PCB.wrl"
     },
